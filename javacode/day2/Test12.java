@@ -13,7 +13,8 @@ public class Test12 {
 		if ((pos & car) == 0) {
 			System.out.printf("%d 車位可以停車\n", no);
 			// 將車子停進停車格
-			pos = pos + car;
+			//pos = pos + car;
+			pos += car;
 			System.out.println(Integer.toBinaryString(pos)); 
 			System.out.println(pos);
 		} else {

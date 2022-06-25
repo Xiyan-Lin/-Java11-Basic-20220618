@@ -12,7 +12,8 @@ public class Test13 {
 		if((pos & car) > 0) {
 			System.out.printf("%d 車位可以移車\n", no);
 			// 進行移車
-			pos = pos - car;
+			//pos = pos - car;
+			pos -= car;
 			System.out.println(Integer.toBinaryString(pos));
 			System.out.println(pos);
 		} else {

@@ -15,7 +15,10 @@ public class Test16 {
 
 		System.out.printf("您所輸入的身高: %.1f\n", h);
 		System.out.printf("您所輸入的體重: %.1f\n", w);
-		
+
+		// 計算 bmi
+		double bmi = w / Math.pow(h/100, 2);
+		System.out.printf("BMI: %.2f\n", bmi);
 
 	}
 }

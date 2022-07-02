@@ -9,6 +9,7 @@ public class Loop3 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		int ans = random.nextInt(9) + 1; // 0~8 + 1
+		int count = 3;
 		do {
 			System.out.print("1 ~ 9 猜一數字: ");
 			Scanner scanner = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class Loop3 {
 				System.out.println("答對了");
 				break;
 			}
-		} while(true);
+		} while(--count > 0);
 		// 遊戲結束
 		System.out.println("Game over!!");
 	}
